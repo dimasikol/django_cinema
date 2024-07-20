@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <div style="display:flex;justify-content: center;">
+    {% for item in data %}
+         <div style="display:grid;justify-content: center;">
+             <img width="200px" height="300px" src="{{ item.preview_image.url }}" alt="">
+             <p>{{ item.name }}</p>
+             <p>{{ item.date }}</p>
+             <p>{{ item.generate_name_image }}</p>
+         </div>
+    {% endfor %}
+
+    </div>
+{% endblock body %}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+
+    :root{
+        --size_square:20px
+    }
+
+    #square{
+        display:row;
+        position: absolute;
+        background-color:red;
+        width:var(--size_square);
+        height:var(--size_square);
+        left: calc(50% - var(--size_square)/2);
+        down: calc(50% - var(--size_square)/2);
+        animation-name: square_repeat;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+            animation-timing-function: linear;
+    }
+
+
+    @keyframes square_repeat {
+        0%{
+          left: calc(50% - var(--size_square)/2);
+          top: calc(50% - var(--size_square)/2);
+          background-color: red;
+        }
+        25%{
+            top: calc(100% - var(--size_square));
+            left: 0;
+            background-color: green;
+          border-radius:100%;
+
+        }
+        50%{
+            left: 0;
+            top:0;
+            background-color: yellow;
+        }
+        75% {
+          left: calc(50% - var(--size_square)/2);
+          top:0;
+          background-color: pink;
+          border-radius:100%;
+            }
+        100%{
+             left: calc(50% - var(--size_square)/2);
+             top: calc(50% - var(--size_square)/2);
+                       border-radius:100%;
+
+        }
+    }
+</style>
+
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div>1</div>
+<div style="height:800px;background-color:gray;">
+<div id="square" >
+
+</div>
+</div>
+
+
+</body>
+</html>

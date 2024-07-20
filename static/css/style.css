@@ -1,0 +1,39 @@
+*{
+     margin:0;
+     padding:0;
+     }
+#nav{
+     background-color:grey;
+     height:20px;
+     margin:0px;
+     padding:10px;
+     display: block;
+     color:green;
+     }
+.mytagh1{
+      margin:20px;
+      color:red;
+     }
+#logo{
+     height:300px;
+     wight:300px;
+
+}
+
+.preview {
+    wight:200px;
+    height:300px;
+}
+
+p{
+    color:red;
+}
+
+footer{
+    background-color: grey;
+    margin:  200px auto;
+    padding: 100px auto;
+    align: center;
+
+}
+

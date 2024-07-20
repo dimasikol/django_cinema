@@ -1,0 +1,73 @@
+* {
+     margin:0;
+     padding:0;
+     font-family: Comic Sans MS, Tahoma, Geneva, Times New Roman, cursive;
+}
+
+
+.preview {
+    wight:200px;
+    height:300px;
+}
+
+#nav{
+     background-color:grey;
+     height:20px;
+     margin:0px;
+     padding:10px;
+     display: block;
+     color:green;
+     }
+.mytagh1{
+      margin:20px;
+      color:red;
+     }
+#logo{
+     height:30px;
+     wight:30px;
+}
+p{
+    color:rgb(2,20,20);
+}
+
+footer>p{
+    color:rgb(255,255,255,.5);
+}
+footer>p>a{
+    font-family: Times New Roman, cursive;
+}
+
+
+a{
+    color:blue;
+}
+
+a:hover{
+    color:green;
+
+
+}
+a:visited{
+    color: #20d654;
+}
+
+footer{
+    background-color: grey;
+    margin:  200px auto;
+    padding: 100px auto;
+    align: center;
+}
+
+li:nth-child(2n){
+    text-decoration: underline;
+    text-decoration: italic;
+}
+
+.fist-letter-upper::first-letter{
+    font-size: 150%;
+    color: red;
+    text-transform: uppercase;
+}
+
+
+

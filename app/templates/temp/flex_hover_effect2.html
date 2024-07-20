@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="gallery">
+
+    <div class="item img1">1</div>
+    <div class="item img2">2</div>
+    <div class="item img3">3</div>
+    <div class="item img4">4</div>
+    <div class="item img5">5</div>
+
+</div>
+
+</body>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .gallery{
+        display: flex;
+        justify-content: center;
+        background-color:#ffe;
+    }
+    .item{
+        width:150px;
+        background-color:grey;
+        border-radius:4%;
+        height:350px;
+        transition-duration: .5s;
+        opacity: 0.5;
+    }
+    .item:hover{
+        width:350px;
+        transition-duration: .5s;
+        opacity:1;
+    }
+
+    .img1{
+        background: linear-gradient(black, white);
+    }
+    .img2{
+        background: linear-gradient(black, yellow);
+    }
+    .img3{
+        background: linear-gradient(black, blue);
+    }
+    .img4{
+        background: linear-gradient(black, red);
+    }
+    .img5{
+        background: linear-gradient(black, green);
+    }
+
+
+</style>
+</html>

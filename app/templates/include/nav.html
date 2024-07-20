@@ -1,0 +1,12 @@
+{% load static %}
+<div class="nav" style="display:flex;justify-content: space-between;" id="nav" >
+     <a href="{% url 'homepage' %}"><img id="logo" src="{% static 'image\logo.jpg' %}"> </a>
+     {{ user }}
+     {% if user.is_authenticated %}
+          <a href="{% url 'logout' %}"><p>logout</p></a>
+     {% else %}
+          <a href="{% url 'sign_up' %}"><p>sign up</p></a>
+          <a href="{% url 'sign_in' %}"><p>sign in</p></a>
+
+     {% endif %}
+</div>

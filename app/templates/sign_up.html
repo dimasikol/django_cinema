@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form method='POST' action="{% url 'sign_up' %}">
+     {% csrf_token %}
+    <input name='username' type="text">
+    <input name='email' type="email">
+    <input name="password" type="password">
+    <input name="password2" type="password">
+    <input type="submit" value="зарегистрироваться">
+</form>
+
+{% endblock body %}
